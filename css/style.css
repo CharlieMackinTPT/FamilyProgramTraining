@@ -93,7 +93,7 @@ a:focus {
 .btn,
 .btn:focus {
   outline: none !important;
-  box-shadow: none;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);;
 }
 
 .top_container {
@@ -245,8 +245,9 @@ a:focus {
 }
 
 .about_section a {
-  background-color: rgb(36, 0, 83);
+  background-color: rgb(0, 170, 81);
   color: #fefeff;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);;
 }
 
 /* end about section */
@@ -268,7 +269,7 @@ a:focus {
 }
 
 .why_section a {
-  background-color: rgb(36, 0, 83);
+  background-color: rgb(0, 170, 81);
   color: #fefeff;
 }
 
@@ -278,7 +279,7 @@ a:focus {
 
 
 .determine_section a {
-  background-color: rgb(36, 0, 83);
+  background-color: rgb(0, 170, 81);
   color: #fefeff;
 }
 

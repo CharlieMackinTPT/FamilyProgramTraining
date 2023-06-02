@@ -38,8 +38,46 @@ body {
 
 .call_to-btn img {
   width: 18px;
- 
 }
+
+.cd-faq__category 
+{ background-color: rgb(0, 170, 81);
+  border-color: rgb(0, 120, 58);
+  color: #fefeff;
+}
+
+.cd-faq__categories
+{ background-color: rgb(0, 170, 81);
+  border-color: rgb(0, 120, 58);
+  color: #fefeff;}
+
+.cd-faq__category-selected
+{ background-color: rgb(0, 170, 81);
+  border-color: rgb(0, 120, 58);
+  color: #fefeff;}
+
+  .truncate
+  { background-color: rgb(0, 170, 81);
+    border-color: rgb(0, 120, 58);
+    color: #fefeff;}
+
+  .cd-faq__item-visible .cd-faq__trigger::before
+  { background-color: rgb(0, 170, 81);
+    color: #fefeff;}
+
+    .cd-faq__item-visible .cd-faq__trigger::after
+    { background-color: rgb(0, 170, 81);
+      color: #fefeff;}
+
+      .cd-faq__item .cd-faq__trigger::before
+      { background-color: rgb(0, 170, 81);
+        color: #fefeff;}
+    
+        .cd-faq__item .cd-faq__trigger::after
+        { background-color: rgb(0, 170, 81);
+          color: #fefeff;}
+
+    
 
 .btn_on-hover {
   transition: all 0.3s ease 0s;
@@ -54,7 +92,7 @@ body {
 }
 
 .main-heading {
-  color: rgb(36, 0, 83);;
+  color: rgb(93, 22, 163);
   font-weight: bold;
   text-align: center;
 }
@@ -75,7 +113,7 @@ nav.navbar.navbar-expand-lg {
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 20px;
   color: #f7f6f7;
-  text-align: center;
+  text-align: 
 }
 
 
@@ -93,7 +131,7 @@ a:focus {
 .btn,
 .btn:focus {
   outline: none !important;
-  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);;
+  box-shadow: none;
 }
 
 .top_container {
@@ -114,8 +152,20 @@ a:focus {
   z-index: -1;
 }
 
+.bottom_container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background: rgb(93, 22, 163);
+  background-size: 100% 100%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 .sub_page .top_container::before {
-  background-color: rgb(95, 0, 158);
+  background-color: #fdd31d;
   background-image: none;
 }
 
@@ -128,7 +178,7 @@ a:focus {
 
 
 .navbar-brand img {
-  width: 25px;
+  width: 200px;
   margin-right: 7px;
 }
 
@@ -232,6 +282,12 @@ a:focus {
   margin: 30px 0 50px 0;
 }
 
+.bottom_container p {
+  font-weight: 600;
+  color: #ffffff;
+  margin: 30px 0 50px 0;
+}
+
 .common_style img {
   width: 100%;
 }
@@ -245,9 +301,8 @@ a:focus {
 }
 
 .about_section a {
-  background-color: rgb(0, 170, 81);
+  background-color: rgb(93, 22, 163);
   color: #fefeff;
-  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);;
 }
 
 /* end about section */
@@ -256,7 +311,7 @@ a:focus {
 
 
 .admission_section a {
-  background-color: rgb(36, 0, 83);
+  background-color: rgb(93, 22, 163);
   color: #fefeff;
 }
 
@@ -269,8 +324,11 @@ a:focus {
 }
 
 .why_section a {
-  background-color: rgb(0, 170, 81);
+  box-shadow: 10px #3f3f3f;
+  background-color: rgb(93, 22, 163);
+  background-position: center;
   color: #fefeff;
+  font-weight: bold;
 }
 
 /* end why section */
@@ -279,8 +337,11 @@ a:focus {
 
 
 .determine_section a {
-  background-color: rgb(0, 170, 81);
+  box-shadow: 10px #3f3f3f;
+  background-color: rgb(93, 22, 163);
+  background-position: center;
   color: #fefeff;
+  font-weight: bold;
 }
 
 
@@ -300,7 +361,7 @@ a:focus {
 
 .client_section h5 {
   font-size: 24px;
-  color: rgb(36, 0, 83);
+  color: rgb(93, 22, 163);
 }
 
 .client_section .row {
@@ -413,7 +474,7 @@ a:focus {
 
 .contact_form-container button {
   border: none;
-  background-color: rgb(95, 0, 158);
+  background-color: rgb(93, 22, 163);
   color: #fff;
   font-size: 15px;
   padding: 15px 45px;
@@ -447,8 +508,8 @@ a:focus {
 
 /* info section */
 .info_section {
-  background-color: #363636;
-  color: #ffffff;
+  background-color: #ffffff;;
+  color: #010103;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -460,7 +521,7 @@ a:focus {
 .info_logo-box h2 {
   font-weight: bold;
   padding: 5px 7px;
-  border-bottom: 1.5px solid #1dfdd8;
+  border-bottom: 1.5px solid rgb(93, 22, 163);
 }
 
 .info_section ul {
@@ -477,12 +538,14 @@ a:focus {
 }
 
 .info_section ul li a:hover {
-  color: #1dfdd8;
+  color: rgb(93, 22, 163);
 }
 
 .info_section h5 {
-  margin-bottom: 12px;
-  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 7px;
+  border: 5px solid rgb(93, 22, 163);
 }
 
 
@@ -494,7 +557,7 @@ a:focus {
 }
 
 .info_section .form_container input::placeholder {
-  color: #ccc8c8;
+  color: #ffffff;
 }
 
 .info_section .form_container button {

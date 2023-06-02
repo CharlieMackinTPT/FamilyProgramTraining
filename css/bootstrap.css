@@ -383,7 +383,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 h6, .h6 {
@@ -477,9 +477,9 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  max-width: 700px;
 }
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -4061,7 +4061,6 @@ input[type="button"].btn-block {
 }
 
 .nav-link {
-  display: block;
   padding: 0.5rem 1rem;
 }
 
@@ -4170,13 +4169,15 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
+max-width: 500px;
+}
+
+.logo-image{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: visible;
+  margin-top: -6px;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {

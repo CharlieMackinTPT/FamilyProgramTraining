@@ -4060,7 +4060,8 @@ input[type="button"].btn-block {
 }
 
 .nav-link {
-  padding: 0.5rem 1rem;
+  color: #fefeff;
+  font-weight: bold;
 }
 
 .nav-link:hover, .nav-link:focus {

@@ -287,7 +287,7 @@ a:focus {
 
 /* common style for some sections */
 .common_style>section {
-  padding: 80px 0;
+  padding: 45px 0;
 }
 
 .common_style .row {
@@ -312,7 +312,7 @@ a:focus {
 }
 
 .common_style img {
-  width: 100%;
+  width: 50%;
 }
 
 

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #fefeff;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 .layout_padding-top {
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .layout_padding-bottom {
@@ -61,6 +61,12 @@ body {
     border-color: rgb(0, 120, 58);
     color: #fefeff;}
 
+  .text-replace {
+    overflow: hidden;
+    color: black;
+    text-indent: 100%;
+    white-space: nowrap}    
+
   .cd-faq__item-visible .cd-faq__trigger::before
   { background-color: rgb(0, 170, 81);
     color: #fefeff;}
@@ -101,7 +107,7 @@ body {
 
 .header_section {
   padding-top: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -110,33 +116,10 @@ nav.navbar.navbar-expand-lg {
   padding: 10px 0;
 }
 
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link{
-  color: #fefeff;
-  font-weight: bold;
-} 
-
-.nav-link-button {
-  box-shadow: 10px #3f3f3f;
-  background-color: rgb(93, 22, 163);
-  box-shadow: 0px 0px 20px 10px #B365FE;
-  background-position: center;
-  color: #fefeff;
-  font-weight: bold;
-  font-size: medium;
-  padding: 15px;
-  text-decoration: underline;
-}
-
-.nav-link-button-two {
-  box-shadow: 10px #3f3f3f;
-  background-color: rgb(93, 22, 163);
-  box-shadow: 0px 0px 20px 10px #B365FE;
-  background-position: center;
-  color: #fefeff;
-  font-weight: bold;
-  padding: 35px;
-  font-size: xx-large;
-  text-decoration: underline;
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 10px 20px;
+  color: #f7f6f7;
+  text-align: 
 }
 
 
@@ -168,7 +151,7 @@ a:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../images/hero-bg.png);
+  background: url(../GeneralImages/Landing.png);
   background-size: 100% 100%;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -274,6 +257,8 @@ a:focus {
   color: #fefeff;
   font-weight: 600;
   width: 100%;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 
@@ -287,7 +272,7 @@ a:focus {
 
 /* common style for some sections */
 .common_style>section {
-  padding: 45px 0;
+  padding: 50px 0;
 }
 
 .common_style .row {
@@ -312,9 +297,8 @@ a:focus {
 }
 
 .common_style img {
-  width: 50%;
+  width: 100%;
 }
-
 
 /* end common style */
 
@@ -360,19 +344,11 @@ a:focus {
 
 
 .determine_section a {
-
-  color: #fefeff;
-
-}
-
-.determine_section h2 {
   box-shadow: 10px #3f3f3f;
   background-color: rgb(93, 22, 163);
-  box-shadow: 0px 0px 20px 10px #B365FE;
   background-position: center;
   color: #fefeff;
   font-weight: bold;
-  max-width: 75%;
 }
 
 
@@ -486,7 +462,7 @@ a:focus {
 
 .contact_section {
   padding: 75px 45px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact_section .row {
@@ -541,7 +517,7 @@ a:focus {
 .info_section {
   background-color: #ffffff;;
   color: #010103;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .info_logo-box {

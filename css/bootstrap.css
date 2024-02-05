@@ -153,18 +153,18 @@ sup {
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
+  color: #1d0596;
+  text-decoration: underline;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #000000;
   text-decoration: underline;
 }
 
 a:not([href]):not([tabindex]) {
-  color: inherit;
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -379,7 +379,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 h5, .h5 {

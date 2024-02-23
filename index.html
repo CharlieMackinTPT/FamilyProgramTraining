@@ -1,180 +1,531 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W5CQN20XWD"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NDC3JVNKCZ"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-NDC3JVNKCZ');
+	</script>
+	<script>document.getElementsByTagName("html")[0].className += " js";</script>
+  	<!-- Analytics-->
+  	<script src="./js/analytics.js"></script>
+  	<!-- JQUERY-->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  	<link rel="stylesheet" href="assets/css/style.css">
+	</script>
+	<!-- App-->
+	<script  type="text/javascript" src="./js/app.js"></script>
+	<!-- Basic -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Site Metas -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
   
-    gtag('config', 'G-W5CQN20XWD');
-  </script>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Skillsville Family Program Training</title>
+	<title>Skillsville Family Program</title>
 	<link rel="icon" type="image/x-icon" href="GeneralImages/S_Favicon_256.ico">
+  
+	<!-- bootstrap core css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  
+	<!-- fonts style -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+	<!-- font wesome stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet" />
+	<!-- responsive style -->
+	<link href="css/responsive.css" rel="stylesheet" />
+  
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <style>
+	  .collapsible {
+		background-color: rgb(95, 0, 158);
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: 25;
+		text-align: center;
+		outline: none;
+		font-size: 25px;
+	  }
+	  
+	  .active, .collapsible:hover {
+		background-color: rgb(95, 0, 158);
+	  }
+	  
+	  .content {
+		padding: 0 18px;
+		display: none;
+		overflow: hidden;
+		background-color: #f1f1f1;
+	  }
+	  </style>
+
+<script>
+	function togglePreWork() {
+	  var pw = document.getElementById("preWork");
+	  var k = document.getElementById("kickOff");
+	  var f = document.getElementById("focus");
+	  var o = document.getElementById("organize");
+	  var r = document.getElementById("remember");
+	  var t = document.getElementById("thinkDifferently");
+	  var fe = document.getElementById("feel");
+	  
+	  if (pw.style.display === "none") {
+		pw.style.display = "block";
+		k.style.display = "none";
+		f.style.display = "none";
+		o.style.display = "none";
+		fe.style.display = "none";
+	  } else {
+		pw.style.display = "none";
+	  }
+	}
+	</script>
+
+<script>
+	function toggleKickOff() {	  var pw = document.getElementById("preWork");
+	  var k = document.getElementById("kickOff");
+	  var f = document.getElementById("focus");
+	  var o = document.getElementById("organize");
+	  var fe = document.getElementById("feel");
+	  
+	  if (k.style.display === "none") {
+		pw.style.display = "none";
+		k.style.display = "block";
+		f.style.display = "none";
+		o.style.display = "none";
+		fe.style.display = "none";
+	  } else {
+		k.style.display = "none";
+	  }
+	}
+	</script>
+
+<script>
+	function toggleFocus() {
+	  var pw = document.getElementById("preWork");
+	  var k = document.getElementById("kickOff");
+	  var f = document.getElementById("focus");
+	  var o = document.getElementById("organize");
+	  var fe = document.getElementById("feel");
+	  
+	  if (f.style.display === "none") {
+		pw.style.display = "none";
+		k.style.display = "none";
+		f.style.display = "block";
+		o.style.display = "none";
+		fe.style.display = "none";
+	  } else {
+		f.style.display = "none";
+	  }
+	}
+	</script>
+
+<script>
+	function toggleOrganize() {
+	  var pw = document.getElementById("preWork");
+	  var k = document.getElementById("kickOff");
+	  var f = document.getElementById("focus");
+	  var o = document.getElementById("organize");
+	  var fe = document.getElementById("feel");
+	  
+	  if (o.style.display === "none") {
+		pw.style.display = "none";
+		k.style.display = "none";
+		f.style.display = "none";
+		o.style.display = "block";
+		fe.style.display = "none";
+	  } else {
+		o.style.display = "none";
+	  }
+	}
+	</script>
+
+<script>
+	function toggleFeel() {
+	  var pw = document.getElementById("preWork");
+	  var k = document.getElementById("kickOff");
+	  var f = document.getElementById("focus");
+	  var o = document.getElementById("organize");
+	  var fe = document.getElementById("feel");
+	  
+	  if (fe.style.display === "none") {
+		pw.style.display = "none";
+		k.style.display = "none";
+		f.style.display = "none";
+		o.style.display = "none";
+		fe.style.display = "block";
+	  } else {
+		fe.style.display = "none";
+	  }
+	}
+	</script>
 
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
-  <!-- font wesome stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
 
 
-
-
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    .collapsible {
-      background-color: rgb(95, 0, 158);
-      color: white;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: 25;
-      text-align: center;
-      outline: none;
-      font-size: 25px;
-    }
-    
-    .active, .collapsible:hover {
-      background-color: rgb(36, 0, 83);
-    }
-    
-    .content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      background-color: #f1f1f1;
-    }
-    </style>
-    </head>
-
-<body>
-  <div class="top_container">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <div class="logo-image">
-                  <img src="GeneralImages/Logo.png" class="img-fluid">
-            </div>
-          </a>
-        </nav>
-      </div>
-    </header>
-    <section class="hero_section ">
-      <div class="hero-container container">
-        <div class="hero_detail-box">
-          <center>
-          <h1>
-            Skillsville Family Program Training
-          </h1>
-        </center>
-        </div>
-    </section>
-  </div>
-
- <!-- Title -->
+	  </head>
+	  <body>
+		<div class="top_container">
+		  <!-- header section strats -->
+		  <header class="header_section">
+			<div class="container">
+			  <nav class="navbar navbar-expand-lg custom_nav-container ">
+				<a class="navbar-brand" href="index.html">
+				  <div class="logo-image">
+						<img src="GeneralImages/Logo.png" class="img-fluid">
+				  </div>
+			</a>
+		  </header>
+		  <section class="hero_section ">
+			<div class="hero-container container">
+			  <div class="hero_detail-box">
+				<Center>
+				<h1>
+				Skillsville Family Program
+				</h1>
+			  </Center>
+			  </div>
+		  </section>
+		</div>
+ 
+<!-- Title -->
  <section class="info_section layout_padding-top">
-  <div class="info_logo-box">
-    <div id="Materials"></div>
-    <h2>
-    Kickoff
-    </h2>
-  </div>
-
-   <!-- Materials -->
-  <div class="container layout_padding2">
-    <div class="row">
-      <div class="col-md-6">
-      <center>
-        <a href="PDFs/KickoffMaterials.pdf"> <img src="SessionImages/KickoffMaterials.png" width="50%" height="50%"</a>
-      </center>
-      </div>
-      <div class="col-md-6">
-        <center>
-        <a href="https://docs.google.com/presentation/d/1HNZdOZVSHXX0dV6Yz4L2NUK1tzgvKNolSdfI26BrxrU/edit#slide=id.g2676007cb7f_0_69"> <img src="SessionImages/KickoffSlides.png" width="75%" height="75%"</a>
-      </center>
-      </div>
-    </div>
-</div>
+	<div class="info_logo-box">
+	<Center>
+		<h4>The Skillsville Family Program is a multimedia event series for families with children 5-8.</h4>
+		<h4>The program is designed to enhance children's executive function skills and knowledge about diverse career options.</h4>
+		<h4>To host your own Skillsville Family Program, review the materials below.</h4>
+	</Center>
+	</div>
 </section>
 
 
+<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
+	<ul class="cd-faq__categories">
+		<li><a class="cd-faq__category truncate" onclick="togglePreWork()" href="">Pre-work</a></li>
+		<li><a class="cd-faq__category truncate" onclick="toggleKickOff()" href="">Kickoff</a></li>
+		<li><a class="cd-faq__category truncate" onclick="toggleFocus()" href="">Focus</a></li>
+		<li><a class="cd-faq__category truncate" onclick="toggleOrganize()" href="">Organize</a></li>
+		<li><a class="cd-faq__category truncate" onclick="toggleFeel()" href="">Feel</a></li>
+<!--	<li><a class="cd-faq__category truncate" onclick="toggleRemember()" href="">Remember</a></li> -->
+<!--	<li><a class="cd-faq__category truncate" onclick="toggleThinkDifferently()" href="">Think Differently</a></li> -->
+	</ul> 
 
-<br>
-<br>
-<br>
-<br>
-      <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-      </script>
-      </body>
-    </head>
+<!-- About Skillsville-->	
 
-    <div class="common_style">
-   
+	<div class="cd-faq__items">
+		<ul id="preWork" class="cd-faq__group">
+			<li class="cd-faq__title"><h2>Pre-work</h2></li>
 
-    <!-- contact section -->
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Confirm eligibility</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+			<p>To use facilitate the Family Program you must meet the following requirements:</p> 
+			<ul>
+				<li>Ability to host 4 or more sessions.</li>
+				<li>Tablets for each child.</li>
+				<li>Reliable, stable internet, of at least 10 Mbps per user at the hosting location.</li>
+				<li>Ability to unblock/whitelist any websites needed for the program at the hosting location.</li>
+				<li>Confidence facilitating technology, and troubleshooting as needed.</li>
+				<li>Ability to print materials.</li>
+				<li>Ability to project materials.</li>
+			  </ul>         
+				</div>
+				</div>  
+			</li>
 
-    <div class="bottom_container">
-      <header class="header_section">
-      </header>
-      <section class="hero_section ">
-          <div class="hero_detail-box">
-            <br>
-            <center>
-            <h1>
-              Need help? 
-            </h1>
-            <p>
-              Email us at skillsville@tpt.org 
-            </p>
-          </center>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Make your Skillsville Platform account</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>The Skillsville Platform contains the episodes, Skillsville Strategies, digital games, and paper games for your family sessions. You will need to make an account and create children’s accounts for the number of participants you expect to have.</p>
+			<p>To create your account, go to <a href="https://bit.ly/Skillsville">bit.ly/Skillsville</href>.</a>
+		</div>
+				</div>  
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Choose your sessions</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>The Skillsville Family Program is 6 sessions. Everyone must host the Kickoff Session first, then may choose to run the sessions in any order.</p>
+		</div>
+				</div>  
+			</li>
+
+		</ul>
+
+<!-- Kickoff -->
+
+		<ul id="kickOff" style="display: none;" class="cd-faq__group">
+			<li class="cd-faq__title"><h2>Kickoff</h2></li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Review the Kickoff Session Slides</span></a>
+				<div class="cd-faq__content">
+		  <div class="text-component">
+			<p>Project these slides where the whole room can see at your Kickoff event.</p>
+			<p>You can use the <a target="blank" href="PDFs/Kickoff_SlideDeckTalkingPoints.pdf">slide deck talking points</a> as a guide.</p>
+			<a target="blank" href="https://docs.google.com/presentation/d/1HNZdOZVSHXX0dV6Yz4L2NUK1tzgvKNolSdfI26BrxrU/edit#slide=id.g2676007cb7f_0_69"> <img src="SessionImages/KickoffSlides.png" width="50%"</a>
+				</div> 
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Print Kickoff Session Materials</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+			<p>Color printing is preferred, but all our materials will still work in black and white.</p>
+			<ul>
+			<li><a target="blank" href="PDFs/Kickoff_VolunteerHandout.pdf">Volunteer Hand Out</a> (1 per volunteer)</li>
+			<li><a target="blank" href="PDFs/Kickoff_SessionAgenda.pdf">Skillsville Agenda</a> (1 per family, and a few extras)</li>
+			<li><a target="blank" href="PDFs/Kickoff_ConversationCard.pdf">Kickoff Conversation Card</a> (1 per family, and a few extras)</li>
+			<li><a target="blank" href="PDFs/Kickoff_SkillsvilleTo-Go.pdf">Skillsville To-Go</a> (1 per family, and a few extras, print this double-sided)</li>
+			<li>Skillsville ID Badges (Made on the Skillsville Platform)</li>
+		</ul>
           </div>
-      </section>
-    </div>
-    
+				</div> 
+			</li>
 
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Play the Avatar Maker</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>We recommend playing the game before your session so you can help others easily.</p>
+			<p>Make an extra children's login to use. The Avatar Maker will pop-up when you login.</p>
+          </div>
+				</div> 
+			</li>
 
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Complete the Kickoff Prep Checklist</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+			<p>All items on the <a target="blank" href="PDFs/Kickoff_PrepChecklist.pdf">Kickoff Prep Checklist</a> must be complete before the start of the Kickoff session.</p>
+		</div>
+				</div> 
+			</li>
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>After the Kickoff Session</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+			<p>Now that everyone has made an Avatar in the Avatar Maker, reprint the Skillsville ID Badges.</p>
+			<p>Staple each Skillsville ID Badge to a <a target="blank" href="PDFs/ResumeBuilder.pdf">Resume Builder</a>.</p>
+			<p>You will hand out the Resumes at the start of each session going forward. Make sure each child has the Resume with their ID Badge on it.</p>
+		</div>
+				</div> 
+			</li>
 
- 
+		</ul> 
+
+<!-- Focus -->
+<ul id="focus" style="display: none;" class="cd-faq__group">
+	<li class="cd-faq__title"><h2>Focus</h2></li>
+	
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Review the Focus Session Slides</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Project these slides where the whole room can see at your Focus event.</p>
+	<p>You can use the <a target="blank" href="PDFs/Focus_SlideDeckTalkingPoints.pdf">slide deck talking points</a> as a guide.</p>
+	<a href="https://docs.google.com/presentation/d/1NDZK97Cr9UZv_u5P3j22bewsm_6DRDBNZ2oHrEeRDwo/edit?usp=sharing"> <img src="SessionImages/FocusSlides.png" width="50%"</a>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Print Focus Session Materials</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Color printing is preferred, but all our materials will still work in black and white.</p>
+	<ul>
+	<li><a target="blank" href="PDFs/Focus_VolunteerHandout.pdf">Volunteer Hand Out</a> (1 per volunteer)</li>
+	<li><a target="blank" href="PDFs/Focus_SessionAgenda.pdf">Session Agenda</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/Focus_ConversationCard.pdf">Focus Conversation Card</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/Focus_SkillsvilleTo-Go.pdf">Skillsville To-Go Activity</a> (1 per family, and a few extras)</li>
+	<li>Rapid Response Paper Game (On the Skillsville Platform)</li>
+  </div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Rapid Response</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the materials, and a How-to video on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+	
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Salon Beats</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the game on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Complete the Focus Prep Checklist</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>All items on the <a target="blank" href="PDFs/Focus_PrepChecklist.pdf">Focus Prep Checklist</a> must be complete before the start of the Focus session.</p>
+		</div> 
+	</li>
+</ul> 
+
+<!-- Organize -->
+<ul id="organize" style="display: none;" class="cd-faq__group">
+	<li class="cd-faq__title"><h2>Organize</h2></li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Review the Organize Session Slides</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Project these slides where the whole room can see at your Organize event.</p>
+	<p>You can use the <a target="blank" href="PDFs/Organize_SlideDeckTalkingPoints.pdf">slide deck talking points</a> as a guide.</p>
+	<a target="blank" href="https://docs.google.com/presentation/d/1arJBsHhoU_I7mHP03SUj0CN7MPzA9vTPTYMl2CvmD3g/edit?usp=sharing "> <img src="SessionImages/OrganizeSlides.png" width="50%"</a>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Print Organize Session Materials</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Color printing is preferred, but all our materials will still work in black and white.</p>
+	<ul>
+	<li><a target="blank" href="PDFs/Organize_VolunteerHandout.pdf">Volunteer Hand Out</a> (1 per volunteer)</li>
+	<li><a target="blank" href="PDFs/Organize_SessionAgenda.pdf">Session Agenda</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/Organize_ConversationCard.pdf">Organize Conversation Card</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/Organize_SkillsvilleTo-Go.pdf">Skillsville To-Go Activity</a> (1 per family, and a few extras)</li>
+	<li>Fit the Budget Paper Game (On the Skillsville Platform)</li>
+  </div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Fit the Budget</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the materials, and a How-to video on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+	
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Plan Pack Go</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the game on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Complete the Organize Prep Checklist</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>All items on the <a target="blank" href="PDFs/Organize_PrepChecklist.pdf">Organize Prep Checklist</a> must be complete before the start of the Organize session.</p>
+		</div> 
+	</li>
+</ul> 
+
+<!-- Feel -->
+<ul id="feel" style="display: none;" class="cd-faq__group">
+	<li class="cd-faq__title"><h2>Feel</h2></li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Review the Feel Session Slides</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Project these slides where the whole room can see at your Feel event.</p>
+	<p>You can use the <a target="blank" href="PDFs/Feel_SlideDeckTalkingPoints.pdf">slide deck talking points</a> as a guide.</p>
+	<a target="blank" href="https://docs.google.com/presentation/d/17zGMkaBsRa3Na3c1pG9T3ZkiDzQfl1CM3k8gcJoWLK8/edit?usp=sharing"> <img src="SessionImages/FeelSlides.png" width="50%"</a>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Print Feel Session Materials</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Color printing is preferred, but all our materials will still work in black and white.</p>
+	<ul>
+	<li><a target="blank" href="PDFs/Feel_VolunteerHandout.pdf">Volunteer Hand Out</a> (1 per volunteer)</li>
+	<li><a target="blank" href="PDFs/Feel_SessionAgenda.pdf">Session Agenda</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/Feel_ConversationCard.pdf">Feel Conversation Card</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/Feel_SkillsvilleTo-Go.pdf">Skillsville To-Go Activity</a> (1 per family, and a few extras)</li>
+	<li>Feeling Faces Paper Game (On the Skillsville Platform)</li>
+  </div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Feeling Faces</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the materials, and a How-to video on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+	
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Works of Heart</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the game on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Complete the Feel Prep Checklist</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>All items on the <a target="blank" href="PDFs/Feel_PrepChecklist.pdf">Feel Prep Checklist</a> must be complete before the start of the Feel session.</p>
+		</div> 
+	</li>
+</ul> 
+
+<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
+
+<div class="cd-faq__overlay" aria-hidden="true"></div>
+</section> <!-- cd-faq -->
+
+<!-- contact section -->
+
+<div class="bottom_container">
+	<header class="header_section">
+	</header>
+	<section class="hero_section ">
+		<div class="hero_detail-box">
+		  <br>
+		  <center>
+		  <h1>
+			Need help? 
+		  </h1>
+		  <p>
+			Email us at skillsville@tpt.org 
+		  </p>
+		</center>
+		</div>
+	</section>
+  </div>
+  
+<script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets/js/main.js"></script> 
 </body>
-
 </html>

@@ -75,9 +75,10 @@
 	  var k = document.getElementById("kickOff");
 	  var f = document.getElementById("focus");
 	  var o = document.getElementById("organize");
-	  var r = document.getElementById("remember");
-	  var t = document.getElementById("thinkDifferently");
 	  var fe = document.getElementById("feel");
+	  var r = document.getElementById("remember");
+	  var td = document.getElementById("thinkDifferently");
+	  var e = document.getElementById("end");
 	  
 	  if (pw.style.display === "none") {
 		pw.style.display = "block";
@@ -85,6 +86,9 @@
 		f.style.display = "none";
 		o.style.display = "none";
 		fe.style.display = "none";
+		r.style.display = "none";
+		td.style.display = "none";
+		e.style.display = "none";
 	  } else {
 		pw.style.display = "none";
 	  }
@@ -93,10 +97,14 @@
 
 <script>
 	function toggleKickOff() {	  var pw = document.getElementById("preWork");
+	  var pw = document.getElementById("preWork");
 	  var k = document.getElementById("kickOff");
 	  var f = document.getElementById("focus");
 	  var o = document.getElementById("organize");
 	  var fe = document.getElementById("feel");
+	  var r = document.getElementById("remember");
+	  var td = document.getElementById("thinkDifferently");
+	  var e = document.getElementById("end");
 	  
 	  if (k.style.display === "none") {
 		pw.style.display = "none";
@@ -104,6 +112,9 @@
 		f.style.display = "none";
 		o.style.display = "none";
 		fe.style.display = "none";
+		r.style.display = "none";
+		td.style.display = "none";
+		e.style.display = "none";
 	  } else {
 		k.style.display = "none";
 	  }
@@ -117,6 +128,9 @@
 	  var f = document.getElementById("focus");
 	  var o = document.getElementById("organize");
 	  var fe = document.getElementById("feel");
+	  var r = document.getElementById("remember");
+	  var td = document.getElementById("thinkDifferently");
+	  var e = document.getElementById("end");
 	  
 	  if (f.style.display === "none") {
 		pw.style.display = "none";
@@ -124,6 +138,9 @@
 		f.style.display = "block";
 		o.style.display = "none";
 		fe.style.display = "none";
+		r.style.display = "none";
+		td.style.display = "none";
+		e.style.display = "none";
 	  } else {
 		f.style.display = "none";
 	  }
@@ -137,6 +154,9 @@
 	  var f = document.getElementById("focus");
 	  var o = document.getElementById("organize");
 	  var fe = document.getElementById("feel");
+	  var r = document.getElementById("remember");
+	  var td = document.getElementById("thinkDifferently");
+	  var e = document.getElementById("end");
 	  
 	  if (o.style.display === "none") {
 		pw.style.display = "none";
@@ -144,6 +164,9 @@
 		f.style.display = "none";
 		o.style.display = "block";
 		fe.style.display = "none";
+		r.style.display = "none";
+		td.style.display = "none";
+		e.style.display = "none";
 	  } else {
 		o.style.display = "none";
 	  }
@@ -157,6 +180,9 @@
 	  var f = document.getElementById("focus");
 	  var o = document.getElementById("organize");
 	  var fe = document.getElementById("feel");
+	  var r = document.getElementById("remember");
+	  var td = document.getElementById("thinkDifferently");
+	  var e = document.getElementById("end");
 	  
 	  if (fe.style.display === "none") {
 		pw.style.display = "none";
@@ -164,8 +190,89 @@
 		f.style.display = "none";
 		o.style.display = "none";
 		fe.style.display = "block";
+		r.style.display = "none";
+		td.style.display = "none";
+		e.style.display = "none";
 	  } else {
 		fe.style.display = "none";
+	  }
+	}
+	</script>
+
+<script>
+	function toggleRemember() {
+	  var pw = document.getElementById("preWork");
+	  var k = document.getElementById("kickOff");
+	  var f = document.getElementById("focus");
+	  var o = document.getElementById("organize");
+	  var fe = document.getElementById("feel");
+	  var r = document.getElementById("remember");
+	  var td = document.getElementById("thinkDifferently");
+	  var e = document.getElementById("end");
+	  
+	  if (r.style.display === "none") {
+		pw.style.display = "none";
+		k.style.display = "none";
+		f.style.display = "none";
+		o.style.display = "none";
+		fe.style.display = "none";
+		r.style.display = "block";
+		td.style.display = "none";
+		e.style.display = "none";
+	  } else {
+		r.style.display = "none";
+	  }
+	}
+	</script>
+
+<script>
+	function toggleThinkDifferently() {
+	  var pw = document.getElementById("preWork");
+	  var k = document.getElementById("kickOff");
+	  var f = document.getElementById("focus");
+	  var o = document.getElementById("organize");
+	  var fe = document.getElementById("feel");
+	  var r = document.getElementById("remember");
+	  var td = document.getElementById("thinkDifferently");
+	  var e = document.getElementById("end");
+	  
+	  if (td.style.display === "none") {
+		pw.style.display = "none";
+		k.style.display = "none";
+		f.style.display = "none";
+		o.style.display = "none";
+		fe.style.display = "none";
+		r.style.display = "none";
+		td.style.display = "block";
+		e.style.display = "none";
+	  } else {
+		td.style.display = "none";
+	  }
+	}
+	</script>
+
+<script>
+	function toggleEnd() {
+	  var pw = document.getElementById("preWork");
+	  var k = document.getElementById("kickOff");
+	  var f = document.getElementById("focus");
+	  var o = document.getElementById("organize");
+	  var fe = document.getElementById("feel");
+	  var r = document.getElementById("remember");
+	  var td = document.getElementById("thinkDifferently");
+	  var e = document.getElementById("end");
+	  
+	  if (e.style.display === "none") {
+		pw.style.display = "none";
+		k.style.display = "none";
+		f.style.display = "none";
+		o.style.display = "none";
+		fe.style.display = "none";
+		r.style.display = "none";
+		td.style.display = "none";
+		e.style.display = "block";
+	  } else {
+		e.style.display = "none";
 	  }
 	}
 	</script>
@@ -217,8 +324,9 @@
 		<li><a class="cd-faq__category truncate" onclick="toggleFocus()" href="">Focus</a></li>
 		<li><a class="cd-faq__category truncate" onclick="toggleOrganize()" href="">Organize</a></li>
 		<li><a class="cd-faq__category truncate" onclick="toggleFeel()" href="">Feel</a></li>
-<!--	<li><a class="cd-faq__category truncate" onclick="toggleRemember()" href="">Remember</a></li> -->
-<!--	<li><a class="cd-faq__category truncate" onclick="toggleThinkDifferently()" href="">Think Differently</a></li> -->
+		<li><a class="cd-faq__category truncate" onclick="toggleRemember()" href="">Remember</a></li> 
+		<li><a class="cd-faq__category truncate" onclick="toggleThinkDifferently()" href="">Think Differently</a></li> 
+		<!-- <li><a class="cd-faq__category truncate" onclick="toggleEnd()" href="">Last Session</a></li> -->
 	</ul> 
 
 <!-- About Skillsville-->	
@@ -496,6 +604,120 @@
 		<div class="cd-faq__content">
   <div class="text-component">
 	<p>All items on the <a target="blank" href="PDFs/Feel_PrepChecklist.pdf">Feel Prep Checklist</a> must be complete before the start of the Feel session.</p>
+		</div> 
+	</li>
+</ul> 
+
+<!-- Remember -->
+<ul id="remember" style="display: none;" class="cd-faq__group">
+	<li class="cd-faq__title"><h2>Remember</h2></li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Review the Remember Session Slides</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Project these slides where the whole room can see at your Remember event.</p>
+	<p>You can use the <a target="blank" href="PDFs/Remember_SlideDeckTalkingPoints.pdf">slide deck talking points</a> as a guide.</p>
+	<a target="blank" href="https://docs.google.com/presentation/d/1sTFrABnBXfCq2-nHe10dpXwETlxmlm-Fg347C5VA4is/edit?usp=sharing"> <img src="SessionImages/RememberSlides.png" width="50%"</a>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Print Remember Session Materials</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Color printing is preferred, but all our materials will still work in black and white.</p>
+	<ul>
+	<li><a target="blank" href="PDFs/Remember_VolunteerHandout.pdf">Volunteer Hand Out</a> (1 per volunteer)</li>
+	<li><a target="blank" href="PDFs/Remember_SessionAgenda.pdf">Session Agenda</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/Remember_ConversationCard.pdf">Remember Conversation Card</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/Remember_SkillsvilleTo-Go.pdf">Skillsville To-Go Activity</a> (1 per family, and a few extras)</li>
+	<li>Inspect and Sketch Paper Game (On the Skillsville Platform)</li>
+  </div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Inspect and Sketch</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the materials, and a How-to video on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+	
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Flavor Finder</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the game on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Complete the Remember Prep Checklist</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>All items on the <a target="blank" href="PDFs/Remember_PrepChecklist.pdf">Remember Prep Checklist</a> must be complete before the start of the Remember session.</p>
+		</div> 
+	</li>
+</ul> 
+
+<!-- Think Differently -->
+<ul id="thinkDifferently" style="display: none;" class="cd-faq__group">
+	<li class="cd-faq__title"><h2>Think Differently</h2></li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Review the Think Differently Session Slides</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Project these slides where the whole room can see at your Think Differently event.</p>
+	<p>You can use the <a target="blank" href="PDFs/ThinkDifferently_SlideDeckTalkingPoints.pdf">slide deck talking points</a> as a guide.</p>
+	<a target="blank" href="https://docs.google.com/presentation/d/1bSOncMqbvpsCmWgZpUwGifJ8bqSroot_vnpZuozHQf8/edit?usp=sharing"> <img src="SessionImages/ThinkDifferentlySlides.png" width="50%"</a>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Print Think Differently Session Materials</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>Color printing is preferred, but all our materials will still work in black and white.</p>
+	<ul>
+	<li><a target="blank" href="PDFs/ThinkDifferently_VolunteerHandout.pdf">Volunteer Hand Out</a> (1 per volunteer)</li>
+	<li><a target="blank" href="PDFs/ThinkDifferently_SessionAgenda.pdf">Session Agenda</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/ThinkDifferently_ConversationCard.pdf">Think Differently Conversation Card</a> (1 per family, and a few extras)</li>
+	<li><a target="blank" href="PDFs/ThinkDifferently_SkillsvilleTo-Go.pdf">Skillsville To-Go Activity</a> (1 per family, and a few extras)</li>
+	<li>Changing Constellations Paper Game (On the Skillsville Platform)</li>
+  </div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Changing Constellations</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the materials, and a How-to video on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+	
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Play Making Mayor Decisions</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>We recommend playing the game before your session so you can help others easily.</p>
+	<p>You can find the game on the <a target="blank" href="https://bit.ly/Skillsville">Skillsville Platform</a></p>
+  </div>
+		</div> 
+	</li>
+
+	<li class="cd-faq__item">
+		<a class="cd-faq__trigger" href="#0"><span>Complete the Think Differently Prep Checklist</span></a>
+		<div class="cd-faq__content">
+  <div class="text-component">
+	<p>All items on the <a target="blank" href="PDFs/ThinkDifferently_PrepChecklist.pdf">Think Differently Prep Checklist</a> must be complete before the start of the Think Differently session.</p>
 		</div> 
 	</li>
 </ul> 
